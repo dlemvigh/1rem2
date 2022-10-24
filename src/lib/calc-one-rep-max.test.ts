@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/experimental-ct-react';
+import { test, expect } from '@playwright/experimental-ct-svelte';
 import { calcOneRepMaxWeight, calcOneRepMaxRatio } from './calc-one-rep-max';
 
 test.describe('Epley ratio formula', () => {
