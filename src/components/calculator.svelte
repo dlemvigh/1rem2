@@ -3,8 +3,8 @@
 	import CalculatorResults from './calculator-results.svelte';
 	import { parseNumberLocale } from '../lib/parse-number-locale';
 
-	let reps = '1';
-	let weight = '100';
+	let reps = '';
+	let weight = '';
 </script>
 
 <CalculatorForm bind:reps bind:weight />
