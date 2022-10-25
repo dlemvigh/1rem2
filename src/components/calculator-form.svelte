@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let reps: string = '';
-	export let weight: string = '';
+	export let reps: number | undefined = undefined;
+	export let weight: number | undefined = undefined;
 </script>
 
 <form>
