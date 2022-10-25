@@ -6,11 +6,11 @@
 <form>
 	<label>
 		Reps
-		<input type="number" inputmode="numeric" bind:value={reps} min="1" max="30" />
+		<input type="text" inputmode="numeric" bind:value={reps} min="1" max="30" />
 	</label>
 	<label>
 		Weight
-		<input type="number" inputmode="decimal" bind:value={weight} min="0" max="999" />
+		<input type="text" inputmode="decimal" bind:value={weight} min="0" max="999" />
 	</label>
 </form>
 

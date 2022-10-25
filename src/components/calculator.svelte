@@ -7,4 +7,4 @@
 </script>
 
 <CalculatorForm bind:reps bind:weight />
-<CalculatorResults reps={Number(reps)} weight={Number(weight)} />
+<CalculatorResults reps={parseNumberLocale(reps)} weight={parseNumberLocale(weight)} />
