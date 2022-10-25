@@ -1,9 +1,10 @@
 <script lang="ts">
 	import CalculatorForm from './calculator-form.svelte';
 	import CalculatorResults from './calculator-results.svelte';
+	import { parseNumberLocale } from "../lib/parse-number-locale"
 
-	let reps: number | undefined = undefined;
-	let weight: number | undefined = undefined;
+	let reps: string = "";
+	let weight: string = "";
 </script>
 
 <CalculatorForm bind:reps bind:weight />

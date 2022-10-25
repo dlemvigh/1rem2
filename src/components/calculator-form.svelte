@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let reps: number | undefined = undefined;
-	export let weight: number | undefined = undefined;
+	export let reps: string = "";
+	export let weight: string = "";
 </script>
 
 <form>
@@ -15,8 +15,18 @@
 </form>
 
 <style>
+	form {
+		max-width: 8rem;
+
+		display: grid;
+		grid-template-columns: 2fr 3fr;
+		column-gap: 1rem;
+	}
 	label {
-		display: inline-flex;
+		display: flex;
 		flex-direction: column;
+	}
+	input {
+		width: 100%;
 	}
 </style>
