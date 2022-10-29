@@ -1,7 +1,7 @@
-import { test, expect } from '@playwright/experimental-ct-svelte';
+// import { test, expect } from '@playwright/experimental-ct-svelte';
 import { calcOneRepMaxWeight, calcOneRepMaxRatio } from './calc-one-rep-max';
 
-test.describe('Epley ratio formula', () => {
+describe('Epley ratio formula', () => {
 	type TestCase = [number, number]; // [input, expected]
 	const cases: TestCase[] = [
 		[1, 1],
@@ -33,7 +33,7 @@ test.describe('Epley ratio formula', () => {
 		});
 	});
 });
-test.describe('Epley 1RM formula', () => {
+describe('Epley 1RM formula', () => {
 	type TestCase = [number, number, number]; // [weight, reps, expected]
 	const cases: TestCase[] = [
 		[1, 1, 1],
