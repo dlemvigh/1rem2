@@ -7,7 +7,7 @@
 		"build": "vite build",
 		"preview": "vite preview",
     "test": "npm run test:unit",
-		"test:unit": "vitest unit.test",
+		"test:unit": "vitest run unit.test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
