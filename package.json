@@ -6,14 +6,16 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-    "test": "npm run test:unit",
+		"test": "npm run test:unit",
 		"test:unit": "vitest run unit.test",
+    "test:visual": "playwright test -c playwright.config.ts visual.test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@playwright/experimental-ct-svelte": "^1.27.1",
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^5.27.0",
