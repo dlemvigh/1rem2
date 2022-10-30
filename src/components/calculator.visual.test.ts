@@ -16,4 +16,22 @@ test.describe('Calculator.svelte', () => {
 		});
 		await expect(component).toHaveScreenshot();
 	});
+
+	test('reps only', async ({ mount }) => {
+		const component = await mount(Calculator, {
+			props: {
+				reps: '12'
+			}
+		});
+		await expect(component).toHaveScreenshot();
+	});
+
+	test('weight only', async ({ mount }) => {
+		const component = await mount(Calculator, {
+			props: {
+				weight: '125'
+			}
+		});
+		await expect(component).toHaveScreenshot();
+	});
 });
